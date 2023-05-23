@@ -1,0 +1,29 @@
+{
+    "manifests": {
+        "taklearning/alejandria-bundle": {
+            "manifest": {
+                "bundles": {
+                    "AlejandriaBundle\\AlejandriaBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
+                "aliases": ["wetak_alejandria"]
+            },
+            "files": {
+                "config/packages/taklearning_alejandria.yaml": {
+                    "contents": [
+                        "alejandria:",
+                        "    campus:",
+                        "        active: false",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "e93cfafcac281b886b0f78553ecdd803d83923c2"
+        }
+    }
+}

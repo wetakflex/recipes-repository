@@ -1,0 +1,37 @@
+{
+    "manifests": {
+        "taklearning/recaptcha-bundle": {
+            "manifest": {
+                "bundles": {
+                    "TAK\\RecaptchaBundle\\TAKRecaptchaBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
+                "env": {
+                    "recaptcha_public_key": "",
+                    "recaptcha_private_key": "",
+                    "recaptcha_minimum_score": "0.5",
+                    "recaptcha_source_url": "https://www.google.com"
+                },
+                "aliases": ["wetak_recaptcha"]
+            },
+            "files": {
+                "config/packages/taklearning_recaptcha.yaml": {
+                    "contents": [
+                        "tak_recaptcha:",
+                        "    recaptcha_public_key: '%env(recaptcha_public_key)%'",
+                        "    recaptcha_private_key: '%env(recaptcha_private_key)%'",
+                        "    recaptcha_minimum_score: '%env(recaptcha_minimum_score)%'",
+                        "    recaptcha_source_url: '%env(recaptcha_source_url)%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "e93cfafcac281b886b0f78553ecdd803d83923c2"
+        }
+    }
+}

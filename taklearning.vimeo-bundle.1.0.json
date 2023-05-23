@@ -1,0 +1,38 @@
+{
+    "manifests": {
+        "taklearning/vimeo-bundle": {
+            "manifest": {
+                "bundles": {
+                    "VimeoBundle\\VimeoBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
+                "env": {
+                    "parameter_vimeo_client_id": "",
+                    "parameter_vimeo_client_secret": "",
+                    "parameter_vimeo_access_token": "",
+                    "parameter_vimeo_domains": "['wetak.com']"
+                },
+                "aliases": ["wetak_vimeo"]
+            },
+            "files": {
+                "config/packages/taklearning_vimeo.yaml": {
+                    "contents": [
+                        "taklearning_vimeo:",
+                        "    client_id: '%env(parameter_vimeo_client_id)%'",
+                        "    client_secret: '%env(parameter_vimeo_client_secret)%'",
+                        "    access_token: '%env(parameter_vimeo_access_token)%'",
+                        "    domains: '%env(parameter_vimeo_domains)%'",
+                        "    scopes: null # TODO ver esto porque no toma el default",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "e93cfafcac281b886b0f78553ecdd803d83923c2"
+        }
+    }
+}
