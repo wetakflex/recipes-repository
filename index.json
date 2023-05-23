@@ -5,6 +5,12 @@
         ],
         "taklearning/vimeo-bundle": [
             "1.0"
+        ],
+        "taklearning/recaptcha-bundle": [
+            "1.0"
+        ],
+        "taklearning/gotowebinar-bundle": [
+            "1.0"
         ]
     },
     "branch": "3.0",
