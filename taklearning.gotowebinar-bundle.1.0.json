@@ -1,0 +1,41 @@
+{
+    "manifests": {
+        "taklearning/gotowebinar-bundle": {
+            "manifest": {
+                "bundles": {
+                    "GoToWebinarBundle\\GoToWebinarBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
+                "env": {
+                    "gotowebinar_auth_url_base": "https://authentication.logmeininc.com/oauth/authorize?client_id=",
+                    "gotowebinar_auth_url_tail": "&response_type=code&redirect_uri=",
+                    "gotowebinar_client_id": "",
+                    "gotowebinar_client_secret": "",
+                    "gotowebinar_redirect_uri": "wetak.com",
+                    "gotowebinar_organizer_key": ""
+                },
+                "aliases": ["wetak_gotowebinar"]
+            },
+            "files": {
+                "config/packages/taklearning_gotowebinar.yaml": {
+                    "contents": [
+                        "tak_gotowebinar:",
+                        "    gotowebinar_auth_url_base: '%env(gotowebinar_auth_url_base)%'",
+                        "    gotowebinar_auth_url_tail: '%env(gotowebinar_auth_url_tail)%'",
+                        "    gotowebinar_client_id: '%env(gotowebinar_client_id)%'",
+                        "    gotowebinar_client_secret: '%env(gotowebinar_client_secret)%'",
+                        "    gotowebinar_redirect_uri: '%env(gotowebinar_redirect_uri)%'",
+                        "    gotowebinar_organizer_key: '%env(gotowebinar_organizer_key)%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "e93cfafcac281b886b0f78553ecdd803d83923c2"
+        }
+    }
+}
