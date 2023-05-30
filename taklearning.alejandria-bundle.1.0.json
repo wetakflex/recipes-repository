@@ -5,9 +5,6 @@
                 "bundles": {
                     "AlejandriaBundle\\AlejandriaBundle": [
                         "all"
-                    ],
-                    "Symfony\\Bundle\\SwiftmailerBundle\\SwiftmailerBundle": [
-                        "all"
                     ]
                 },
                 "copy-from-recipe": {
@@ -64,7 +61,7 @@
                     "executable": false
                 }
             },
-            "ref": "2ae7aeab892bab917fbe66795bd4fdbd7c1e873f"
+            "ref": "6f0f661388bf4d4689bd8d628c664caf88a94b72"
         }
     }
 }
