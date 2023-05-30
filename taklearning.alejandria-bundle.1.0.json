@@ -35,6 +35,11 @@
                 "config/packages/taklearning_payum.yaml": {
                     "contents": [
                         "payum:",
+                        "    security:",
+                        "        token_storage:",
+                        "            AppBundle\\Entity\\Payment\\PaymentToken: { doctrine: orm }",
+                        "    storages:",
+                        "        AppBundle\\Entity\\Payment\\Payment: { doctrine: orm }",
                         "    gateways:",
                         "        paypal_express_checkout:",
                         "            factory: paypal_express_checkout",
@@ -53,7 +58,7 @@
                     "executable": false
                 }
             },
-            "ref": "dec6fa6e16d145f2ccdfc325ee15a2616fd14d6f"
+            "ref": "db9cfc18c7ba7cb0dcf1520927fde14ebbbebaa8"
         }
     }
 }
