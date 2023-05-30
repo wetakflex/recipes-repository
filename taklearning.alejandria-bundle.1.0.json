@@ -23,6 +23,15 @@
                 "aliases": ["wetak_alejandria"]
             },
             "files": {
+                "config/packages/taklearning_framework.yaml": {
+                    "contents": [
+                        "framework:",
+                        "    templating:",
+                        "        engines: ['twig']",
+                        ""
+                    ],
+                    "executable": false
+                },
                 "config/packages/taklearning_alejandria.yaml": {
                     "contents": [
                         "alejandria:",
@@ -58,7 +67,7 @@
                     "executable": false
                 }
             },
-            "ref": "db9cfc18c7ba7cb0dcf1520927fde14ebbbebaa8"
+            "ref": "9f40a0e71901ddff5f65053f89e15ddf316cd6f9"
         }
     }
 }
