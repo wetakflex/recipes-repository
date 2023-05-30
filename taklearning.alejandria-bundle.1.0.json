@@ -65,9 +65,16 @@
                         ""
                     ],
                     "executable": false
+                },
+                "config/packages/taklearning_jms_serializer.yaml": {
+                    "contents": [
+                        "jms_serializer: ~",
+                        ""
+                    ],
+                    "executable": false
                 }
             },
-            "ref": "9f40a0e71901ddff5f65053f89e15ddf316cd6f9"
+            "ref": "7fe4a7404990ce3ea92a72a81649a3527efb6460"
         }
     }
 }
