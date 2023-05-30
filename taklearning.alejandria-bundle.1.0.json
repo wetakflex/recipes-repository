@@ -5,6 +5,9 @@
                 "bundles": {
                     "AlejandriaBundle\\AlejandriaBundle": [
                         "all"
+                    ],
+                    "Symfony\\Bundle\\SwiftmailerBundle\\SwiftmailerBundle": [
+                        "all"
                     ]
                 },
                 "copy-from-recipe": {
