@@ -23,6 +23,15 @@
                 "aliases": ["wetak_alejandria"]
             },
             "files": {
+                "config/packages/taklearning_imports.yaml": {
+                    "contents": [
+                        "imports:",
+                        "    - { resource: '@AlejandriaBundle/Resources/config/services.yml' }",
+                        "    - { resource: '@AlejandriaBundle/Resources/config/security.yml' }",
+                        ""
+                    ],
+                    "executable": false
+                },
                 "config/packages/taklearning_framework.yaml": {
                     "contents": [
                         "framework:",
@@ -74,7 +83,7 @@
                     "executable": false
                 }
             },
-            "ref": "7fe4a7404990ce3ea92a72a81649a3527efb6460"
+            "ref": "f65f37625c9a7686773ede68887fee68e742c00f"
         }
     }
 }
