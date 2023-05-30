@@ -26,17 +26,7 @@
                 "config/packages/taklearning_imports.yaml": {
                     "contents": [
                         "imports:",
-                        "    - { resource: '@AlejandriaBundle/Resources/config/services.yml' }",
-                        "    - { resource: '@AlejandriaBundle/Resources/config/security.yml' }",
-                        ""
-                    ],
-                    "executable": false
-                },
-                "config/packages/taklearning_framework.yaml": {
-                    "contents": [
-                        "framework:",
-                        "    templating:",
-                        "        engines: ['twig']",
+                        "    - { resource: '@AlejandriaBundle/Resources/config/config.yml' }",
                         ""
                     ],
                     "executable": false
@@ -53,11 +43,6 @@
                 "config/packages/taklearning_payum.yaml": {
                     "contents": [
                         "payum:",
-                        "    security:",
-                        "        token_storage:",
-                        "            AppBundle\\Entity\\Payment\\PaymentToken: { doctrine: orm }",
-                        "    storages:",
-                        "        AppBundle\\Entity\\Payment\\Payment: { doctrine: orm }",
                         "    gateways:",
                         "        paypal_express_checkout:",
                         "            factory: paypal_express_checkout",
@@ -74,16 +59,9 @@
                         ""
                     ],
                     "executable": false
-                },
-                "config/packages/taklearning_jms_serializer.yaml": {
-                    "contents": [
-                        "jms_serializer: ~",
-                        ""
-                    ],
-                    "executable": false
                 }
             },
-            "ref": "f65f37625c9a7686773ede68887fee68e742c00f"
+            "ref": "19030ba463d91450fba04e4cefc003fc9c44b9c4"
         }
     }
 }
