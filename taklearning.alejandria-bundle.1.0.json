@@ -18,7 +18,15 @@
                     "redsys_merchant_code": "",
                     "redsys_terminal": "",
                     "redsys_secret_key": "",
-                    "redsys_sandbox": true
+                    "redsys_sandbox": true,
+                    "parameter_mailer_transport": "smtp",
+                    "parameter_mailer_host": "127.0.0.1",
+                    "parameter_mailer_port": "1025",
+                    "parameter_mailer_user": "noreply@wetak.wip",
+                    "parameter_mailer_password": "null",
+                    "parameter_mailer_encryption": "null",
+                    "parameter_mailer_local_domain": "wetak.wip",
+                    "parameter_mailer_user_title": "Alejandria Local"
                 },
                 "aliases": ["wetak_alejandria"]
             },
@@ -61,7 +69,7 @@
                     "executable": false
                 }
             },
-            "ref": "9f6c69939428a2ac1281dd4bfedad386748a4687"
+            "ref": "51839f90d2959a933c01daa7efc234cab66b95ab"
         }
     }
 }
