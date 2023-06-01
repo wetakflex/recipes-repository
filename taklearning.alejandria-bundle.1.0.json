@@ -59,6 +59,16 @@
                         ""
                     ],
                     "executable": false
+                },
+                "config/packages/taklearning_nelmio_cors.yaml": {
+                    "contents": [
+                        "nelmio_cors:",
+                        "    paths:",
+                        "        '^/':",
+                        "            allow_origin: ['*']",
+                        ""
+                    ],
+                    "executable": false
                 }
             },
             "ref": "6f0f661388bf4d4689bd8d628c664caf88a94b72"
