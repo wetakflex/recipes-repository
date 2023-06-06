@@ -8,6 +8,9 @@
                     ],
                     "Cocur\\Slugify\\Bridge\\Symfony\\CocurSlugifyBundle": [
                         "all"
+                    ],
+                    "Knp\\DoctrineBehaviors\\Bundle\\DoctrineBehaviorsBundle": [
+                        "all"
                     ]
                 },
                 "copy-from-recipe": {
@@ -91,9 +94,25 @@
                         ""
                     ],
                     "executable": false
+                },
+                "config/routes/taklearning_routing.yaml": {
+                    "contents": [
+                        "alejandria:",
+                        "    resource: '@AlejandriaBundle/Resources/config/routing.yml",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/dev/taklearning_routing.yaml": {
+                    "contents": [
+                        "alejandria:",
+                        "    resource: '@AlejandriaBundle/Resources/config/routing_dev.yml",
+                        ""
+                    ],
+                    "executable": false
                 }
             },
-            "ref": "b7b40127441e722d439d4dd2969fff164ee3ea85"
+            "ref": "752cfd92fef622a8603a22248203d73e95495de2"
         }
     }
 }
