@@ -14,6 +14,12 @@
                     "config/": "%CONFIG_DIR%"
                 },
                 "env": {
+                    "database_name": "db_name",
+                    "database_host": "127.0.0.1",
+                    "database_port": "3306",
+                    "database_user": "db_user",
+                    "database_password": "db_password",
+                    "database_driver": "pdo_mysql",
                     "paypal_express_checkout_username": "",
                     "paypal_express_checkout_password": "&",
                     "paypal_express_checkout_signature": "",
@@ -30,7 +36,21 @@
                     "parameter_mailer_encryption": "null",
                     "parameter_mailer_local_domain": "wetak.wip",
                     "parameter_mailer_user_title": "Alejandria Local",
-                    "secure_url": true
+                    "secure_url": true,
+                    "MERCURE_KEY": "ChangeMe",
+                    "saml_identity_provider_entity_id": "-",
+                    "saml_identity_provider_sign_on_service_url": "http://alejandria.com",
+                    "saml_identity_provider_sign_on_service_binding": "-",
+                    "saml_identity_provider_logout_service_url": "http://alejandria.com",
+                    "saml_identity_provider_logout_service_binding": "-",
+                    "saml_identity_provider_x509_cert": "-",
+                    "saml_service_provider_entity_id": "-",
+                    "saml_service_provider_assertion_consumer_service_url": "http://alejandria.com",
+                    "saml_service_provider_assertion_consumer_service_binding": "-",
+                    "saml_service_provider_logout_service_url": "http://alejandria.com",
+                    "saml_service_provider_logout_service_binding": "-",
+                    "saml_service_provider_private_key": "-",
+                    "saml_user_attributes_mapping": ""
                 },
                 "aliases": ["wetak_alejandria"]
             },
