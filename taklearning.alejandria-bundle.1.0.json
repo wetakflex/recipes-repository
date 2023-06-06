@@ -6,7 +6,7 @@
                     "AlejandriaBundle\\AlejandriaBundle": [
                         "all"
                     ],
-                    "Cocur\\Slugify\\Bridge\\Symfony\\CocurSlugifyBundle()": [
+                    "Cocur\\Slugify\\Bridge\\Symfony\\CocurSlugifyBundle": [
                         "all"
                     ]
                 },
