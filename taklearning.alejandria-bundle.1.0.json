@@ -5,6 +5,9 @@
                 "bundles": {
                     "AlejandriaBundle\\AlejandriaBundle": [
                         "all"
+                    ],
+                    "Cocur\\Slugify\\Bridge\\Symfony\\CocurSlugifyBundle()": [
+                        "all"
                     ]
                 },
                 "copy-from-recipe": {
@@ -26,7 +29,8 @@
                     "parameter_mailer_password": "null",
                     "parameter_mailer_encryption": "null",
                     "parameter_mailer_local_domain": "wetak.wip",
-                    "parameter_mailer_user_title": "Alejandria Local"
+                    "parameter_mailer_user_title": "Alejandria Local",
+                    "secure_url": true
                 },
                 "aliases": ["wetak_alejandria"]
             },
@@ -69,7 +73,7 @@
                     "executable": false
                 }
             },
-            "ref": "a732ab22a13c767b64503d31d95d99d61c3f9d6f"
+            "ref": "b7b40127441e722d439d4dd2969fff164ee3ea85"
         }
     }
 }
