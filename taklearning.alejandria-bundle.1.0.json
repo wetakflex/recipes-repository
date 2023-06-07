@@ -39,6 +39,7 @@
                     "parameter_mailer_encryption": "null",
                     "parameter_mailer_local_domain": "wetak.wip",
                     "parameter_mailer_user_title": "Alejandria Local",
+                    "parameter_campus_alt_url": "",
                     "secure_url": true,
                     "MERCURE_KEY": "ChangeMe",
                     "saml_identity_provider_entity_id": "-",
@@ -53,24 +54,21 @@
                     "saml_service_provider_logout_service_url": "http://alejandria.com",
                     "saml_service_provider_logout_service_binding": "-",
                     "saml_service_provider_private_key": "-",
-                    "saml_user_attributes_mapping": ""
+                    "saml_user_attributes_mapping": "",
+                    "cas_server_login_url": "",
+                    "cas_server_validation_url": "",
+                    "alejandria_route_manage_cas": "",
+                    "cas_xml_namespace": ""
                 },
                 "aliases": ["wetak_alejandria"]
             },
             "files": {
-                "config/packages/taklearning_imports.yaml": {
-                    "contents": [
-                        "imports:",
-                        "    - { resource: '@AlejandriaBundle/Resources/config/config.yml' }",
-                        ""
-                    ],
-                    "executable": false
-                },
                 "config/packages/taklearning_alejandria.yaml": {
                     "contents": [
                         "alejandria:",
                         "    campus:",
                         "        active: false",
+                        "        alt_url: '%env(parameter_campus_alt_url)%'",
                         ""
                     ],
                     "executable": false
@@ -110,9 +108,22 @@
                         ""
                     ],
                     "executable": false
+                },
+                "config/taklearning_app_services.yaml": {
+                    "contents": [
+                        "services:",
+                        "    App\\:",
+                        "        resource: '../src/AppBundle/*'",
+                        "        exclude: '../src/AppBundle/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'",
+                        "    App\\Controller\\:",
+                        "        resource: '../src/AppBundle/Controller'",
+                        "        tags: ['controller.service_arguments']",
+                        ""
+                    ],
+                    "executable": false
                 }
             },
-            "ref": "752cfd92fef622a8603a22248203d73e95495de2"
+            "ref": "84ed7f4450f48174e9cf88d1043bec12f8f0b0f9"
         }
     }
 }
