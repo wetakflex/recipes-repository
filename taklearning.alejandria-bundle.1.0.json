@@ -112,10 +112,10 @@
                 "config/taklearning_app_services.yaml": {
                     "contents": [
                         "services:",
-                        "    App\\:",
+                        "    AppBundle\\:",
                         "        resource: '../src/AppBundle/*'",
                         "        exclude: '../src/AppBundle/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'",
-                        "    App\\Controller\\:",
+                        "    AppBundle\\Controller\\:",
                         "        resource: '../src/AppBundle/Controller'",
                         "        tags: ['controller.service_arguments']",
                         ""
