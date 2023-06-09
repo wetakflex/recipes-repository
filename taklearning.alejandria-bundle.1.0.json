@@ -61,6 +61,9 @@
                     "cas_xml_namespace": "",
                     "liip_imagine_web_root": "%kernel.project_dir%/public/"
                 },
+                "gitignore": [
+                    "/%PUBLIC_DIR%/uploads/"
+                ],
                 "aliases": ["wetak_alejandria"]
             },
             "files": {
