@@ -58,7 +58,8 @@
                     "cas_server_login_url": "",
                     "cas_server_validation_url": "",
                     "alejandria_route_manage_cas": "",
-                    "cas_xml_namespace": ""
+                    "cas_xml_namespace": "",
+                    "liip_imagine_web_root": "%kernel.project_dir%/public/"
                 },
                 "aliases": ["wetak_alejandria"]
             },
