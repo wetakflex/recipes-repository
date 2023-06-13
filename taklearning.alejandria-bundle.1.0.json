@@ -102,13 +102,13 @@
                         "            username: '%env(paypal_express_checkout_username)%'",
                         "            password: '%env(paypal_express_checkout_password)%'",
                         "            signature: '%env(paypal_express_checkout_signature)%'",
-                        "            sandbox: '%env(paypal_express_checkout_sandbox)%'",
+                        "            sandbox: '%bool(paypal_express_checkout_sandbox)%'",
                         "        redsys:",
                         "            factory: redsys",
                         "            merchant_code: '%env(redsys_merchant_code)%'",
                         "            terminal: '%env(redsys_terminal)%'",
                         "            secret_key: '%env(redsys_secret_key)%'",
-                        "            sandbox: '%env(redsys_sandbox)%'",
+                        "            sandbox: '%bool(redsys_sandbox)%'",
                         ""
                     ],
                     "executable": false
@@ -143,7 +143,7 @@
                     "executable": false
                 }
             },
-            "ref": "c88c9af48dfea551582508a8390a39920dbb5ac0"
+            "ref": "c30fbf42c52d3a973c0e2394075c8a0a13f8a404"
         }
     }
 }
