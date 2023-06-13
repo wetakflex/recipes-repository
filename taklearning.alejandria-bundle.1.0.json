@@ -116,7 +116,7 @@
                 "config/routes/taklearning_routing.yaml": {
                     "contents": [
                         "alejandria:",
-                        "    resource: '@AlejandriaBundle/Resources/config/routing.yml",
+                        "    resource: '@AlejandriaBundle/Resources/config/routing.yml'",
                         ""
                     ],
                     "executable": false
@@ -124,7 +124,7 @@
                 "config/routes/dev/taklearning_routing.yaml": {
                     "contents": [
                         "alejandria:",
-                        "    resource: '@AlejandriaBundle/Resources/config/routing_dev.yml",
+                        "    resource: '@AlejandriaBundle/Resources/config/routing_dev.yml'",
                         ""
                     ],
                     "executable": false
@@ -143,7 +143,7 @@
                     "executable": false
                 }
             },
-            "ref": "c1c3fa96a0ed059dfbec4d98af269bab9e42c16f"
+            "ref": "baeb2c76b98fa916108cbe626f74a19cd25d76b4"
         }
     }
 }
