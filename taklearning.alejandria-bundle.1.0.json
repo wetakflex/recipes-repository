@@ -62,7 +62,30 @@
                     "liip_imagine_web_root": "public/"
                 },
                 "gitignore": [
-                    "/%PUBLIC_DIR%/uploads/"
+                    "!.gitignore",
+                    "!.htaccess",
+                    "!/**/.gitkeep",
+                    ".*",
+                    ".idea",
+                    ".iml",
+                    "/config/messaging/firebase_web_api_credentials_dev.json",
+                    "/config/messaging/firebase_web_api_credentials_pre.json",
+                    "/config/messaging/firebase_web_api_credentials_prod.json",
+                    "/config/messaging/my_project_credentials_dev.json",
+                    "/config/messaging/my_project_credentials_pre.json",
+                    "/config/messaging/my_project_credentials_prod.json",
+                    "/php.ini",
+                    "/%PUBLIC_DIR%/css/",
+                    "/%PUBLIC_DIR%/js/",
+                    "/%PUBLIC_DIR%/media/",
+                    "/%PUBLIC_DIR%/moodle-lms-xxx/config.php",
+                    "/%PUBLIC_DIR%/prepros-6.config",
+                    "/%PUBLIC_DIR%/prepros.config",
+                    "/%PUBLIC_DIR%/theme/companies/**/*.gitkeep",
+                    "/%PUBLIC_DIR%/uploads/",
+                    "/yarn.lock",
+                    "composer*.phar",
+                    "moodledata/"
                 ],
                 "aliases": ["wetak_alejandria"]
             },
