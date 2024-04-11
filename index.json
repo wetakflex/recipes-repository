@@ -11,6 +11,9 @@
         ],
         "taklearning/gotowebinar-bundle": [
             "1.0"
+        ],
+        "taklearning/store-bundle": [
+            "1.0"
         ]
     },
     "branch": "master",

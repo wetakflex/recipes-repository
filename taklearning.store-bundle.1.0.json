@@ -1,0 +1,39 @@
+{
+    "manifests": {
+        "taklearning/store-bundle": {
+            "manifest": {
+                "bundles": {
+                    "StoreBundle\\StoreBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
+                "env": {
+                    "tak_store_url": "https://alejandria-store.wip"
+                },
+                "aliases": ["wetak_store"]
+            },
+            "files": {
+                "config/routes/taklearning_store_routing.yaml": {
+                    "contents": [
+                        "store_bundle:",
+                        "    resource: '@StoreBundle/Resources/config/routing.yaml'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/taklearning_store.yaml": {
+                    "contents": [
+                        "imports:",
+                        "    - { resource: '@StoreBundle/Resources/config/config.yaml' }",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "a732ab22a13c767b64503d31d95d99d61c3f9d6f"
+        }
+    }
+}
