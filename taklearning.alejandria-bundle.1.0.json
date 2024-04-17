@@ -8,9 +8,6 @@
                     ],
                     "Cocur\\Slugify\\Bridge\\Symfony\\CocurSlugifyBundle": [
                         "all"
-                    ],
-                    "Knp\\DoctrineBehaviors\\Bundle\\DoctrineBehaviorsBundle": [
-                        "all"
                     ]
                 },
                 "copy-from-recipe": {
