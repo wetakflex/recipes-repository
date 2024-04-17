@@ -25,7 +25,6 @@
                         "    client_id: '%env(parameter_vimeo_client_id)%'",
                         "    client_secret: '%env(parameter_vimeo_client_secret)%'",
                         "    access_token: '%env(parameter_vimeo_access_token)%'",
-                        "    domains: '%env(parameter_vimeo_domains)%'",
                         "    scopes: null # TODO ver esto porque no toma el default",
                         ""
                     ],
