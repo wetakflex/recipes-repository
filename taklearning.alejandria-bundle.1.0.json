@@ -90,7 +90,7 @@
                 "config/packages/dev/taklearning_imports.yaml": {
                     "contents": [
                         "imports:",
-                        "    - { resource: '@AlejandriaBundle/Resources/config/config_dev.yml' }",
+                        "    - { resource: '@AlejandriaBundle/Resources/config/config_dev.yaml' }",
                         ""
                     ],
                     "executable": false
@@ -98,7 +98,7 @@
                 "config/packages/prod/taklearning_imports.yaml": {
                     "contents": [
                         "imports:",
-                        "    - { resource: '@AlejandriaBundle/Resources/config/config_prod.yml' }",
+                        "    - { resource: '@AlejandriaBundle/Resources/config/config_prod.yaml' }",
                         ""
                     ],
                     "executable": false
@@ -136,7 +136,7 @@
                 "config/routes/taklearning_routing.yaml": {
                     "contents": [
                         "alejandria:",
-                        "    resource: '@AlejandriaBundle/Resources/config/routing.yml'",
+                        "    resource: '@AlejandriaBundle/Resources/config/routing.yaml'",
                         ""
                     ],
                     "executable": false
@@ -144,7 +144,7 @@
                 "config/routes/dev/taklearning_routing.yaml": {
                     "contents": [
                         "alejandria:",
-                        "    resource: '@AlejandriaBundle/Resources/config/routing_dev.yml'",
+                        "    resource: '@AlejandriaBundle/Resources/config/routing_dev.yaml'",
                         ""
                     ],
                     "executable": false
